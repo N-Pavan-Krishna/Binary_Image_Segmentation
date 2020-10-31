@@ -240,6 +240,32 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				"HEADER_SEARCH_PATHS[arch=*]" = "/usr/local/Cellar/opencv@2/2.4.13.7_11/include/**";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "/usr/local/Cellar/opencv@2/2.4.13.7_11/lib";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-I/usr/local/Cellar/opencv@2/2.4.13.7_11/include/opencv",
+					"-I/usr/local/Cellar/opencv@2/2.4.13.7_11/include",
+					"-L/usr/local/Cellar/opencv@2/2.4.13.7_11/lib",
+					"-lopencv_calib3d",
+					"-lopencv_contrib",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_gpu",
+					"-lopencv_highgui",
+					"-lopencv_imgproc",
+					"-lopencv_legacy",
+					"-lopencv_ml",
+					"-lopencv_nonfree",
+					"-lopencv_objdetect",
+					"-lopencv_ocl",
+					"-lopencv_photo",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_ts",
+					"-lopencv_video",
+					"-lopencv_videostab",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
